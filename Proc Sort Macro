@@ -1,0 +1,5 @@
+%Macro sorter(dsn, var);
+proc sort data=&dsn;
+by &var;
+run;
+%mend sorter;
