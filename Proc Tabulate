@@ -1,0 +1,5 @@
+Proc tabulate data=capstone.project missing;
+class [vars] / PRELOADFMT;
+CLASSlev [vars] / s=[just=R];
+table ALL ([vars]), (N COLPCTN) / printmiss;
+run;
